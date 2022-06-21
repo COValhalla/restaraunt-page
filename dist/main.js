@@ -1,1 +1,1 @@
-console.log("This is working!");
+(()=>{"use strict";console.log("index.js is working"),console.log("loadApp is working!")})();
