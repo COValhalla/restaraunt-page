@@ -1,4 +1,5 @@
-import loadApp from './loadPage';
+import loadHome from './loadHome';
 
 console.log('index.js is working');
-loadApp();
+
+loadHome();

@@ -1,1 +1,1 @@
-(()=>{"use strict";console.log("index.js is working"),console.log("loadApp is working!")})();
+(()=>{"use strict";console.log("index.js is working"),function(){const t=document.querySelector(".content"),e=document.createElement("div");e.classList.add("header");const n=document.createElement("button");n.textContent="Home";const o=document.createElement("button");o.textContent="Menu";const c=document.createElement("button");c.textContent="Contact",e.append(n,o,c),t.appendChild(e),console.log("loadHome is working!")}()})();
