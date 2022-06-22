@@ -1,7 +1,8 @@
-import { prepareDOM } from './siteFunctions';
+import { init, removeMain } from './siteFunctions';
 import loadHome from './loadHome';
 import loadMenu from './loadMenu';
 
-console.log('Running.');
-
+init();
+loadHome();
+removeMain();
 loadMenu();

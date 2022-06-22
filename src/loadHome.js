@@ -1,23 +1,5 @@
 export default function loadHome() {
-  const content = document.querySelector('.content');
-  // Generate header and buttons
-  const header = document.createElement('div');
-  header.classList.add('header');
-
-  const homeBtn = document.createElement('button');
-  homeBtn.textContent = 'Home';
-
-  const menuBtn = document.createElement('button');
-  menuBtn.textContent = 'Menu';
-
-  const contactBtn = document.createElement('button');
-  contactBtn.textContent = 'Contact';
-
-  header.append(homeBtn, menuBtn, contactBtn);
-
-  // Generate main block
-  const main = document.createElement('div');
-  main.classList.add('main');
+  const main = document.querySelector('.main');
 
   // Generate sub block 'about'
   const main__about = document.createElement('div');
@@ -76,8 +58,5 @@ export default function loadHome() {
 
   main.append(main__about, main__hours);
 
-  // Generate footer block
-
-  content.append(header, main);
   console.log('loadHome is working!');
 }
