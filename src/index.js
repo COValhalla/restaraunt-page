@@ -1,5 +1,8 @@
+import './styles.css';
 import loadHome from './loadHome';
-
-console.log('index.js is working');
+import { loadMenu, clearDOM } from './loadMenu';
 
 loadHome();
+clearDOM();
+
+console.log('test');
