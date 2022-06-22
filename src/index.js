@@ -4,5 +4,3 @@ import loadMenu from './loadMenu';
 
 init();
 loadHome();
-removeMain();
-loadMenu();
