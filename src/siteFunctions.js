@@ -1,13 +1,12 @@
 import loadHome from './loadHome';
 import loadMenu from './loadMenu';
-// Need to create loadContact
 
-// Creates standard DOM elements header, main, footer and adds listeners to buttons
 export function init() {
   createHeader();
   createMain();
   createFooter();
   btnListeners();
+  loadHome();
 }
 
 function createHeader() {
@@ -23,11 +22,7 @@ function createHeader() {
   menuBtn.classList.add('menuBtn');
   menuBtn.textContent = 'Menu';
 
-  const contactBtn = document.createElement('button');
-  contactBtn.classList.add('contactBtn');
-  contactBtn.textContent = 'Contact';
-
-  header.append(homeBtn, menuBtn, contactBtn);
+  header.append(homeBtn, menuBtn);
   content.append(header);
 }
 
@@ -61,7 +56,7 @@ function btnListeners() {
   // need to create loadBtn
 }
 
-export function removeMain() {
+function removeMain() {
   const node = document.querySelector('.main');
   while (node.hasChildNodes()) {
     node.removeChild(node.lastChild);

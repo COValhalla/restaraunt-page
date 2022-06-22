@@ -1,6 +1,3 @@
-import { init, removeMain } from './siteFunctions';
-import loadHome from './loadHome';
-import loadMenu from './loadMenu';
+import { init } from './siteFunctions';
 
 init();
-loadHome();

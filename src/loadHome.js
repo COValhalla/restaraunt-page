@@ -57,6 +57,4 @@ export default function loadHome() {
   );
 
   main.append(main__about, main__hours);
-
-  console.log('loadHome is working!');
 }

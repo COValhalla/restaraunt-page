@@ -19,6 +19,4 @@ export default function loadMenu() {
   main__hours.append(main__hours__title);
 
   main.append(main__about, main__hours);
-
-  console.log('loadMenu is working!');
 }
