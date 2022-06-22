@@ -79,6 +79,5 @@ export default function loadHome() {
   // Generate footer block
 
   content.append(header, main);
-
   console.log('loadHome is working!');
 }

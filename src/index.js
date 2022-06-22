@@ -1,7 +1,11 @@
+import { prepareDOM } from './siteFunctions';
 import loadHome from './loadHome';
-import { loadMenu, clearDOM } from './loadMenu';
+import loadMenu from './loadMenu';
 
+prepareDOM();
 loadHome();
-clearDOM();
+
+prepareDOM();
+loadMenu();
 
 console.log('test');

@@ -1,11 +1,4 @@
-export function clearDOM() {
-  const node = document.querySelector('.content');
-  if (node.parentNode) {
-    node.parentNode.removeChild(node);
-  }
-}
-
-export function loadMenu() {
+export default function loadMenu() {
   const content = document.querySelector('.content');
   // Generate header and buttons
   const header = document.createElement('div');
