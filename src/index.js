@@ -2,10 +2,6 @@ import { prepareDOM } from './siteFunctions';
 import loadHome from './loadHome';
 import loadMenu from './loadMenu';
 
-prepareDOM();
-loadHome();
+console.log('Running.');
 
-prepareDOM();
 loadMenu();
-
-console.log('test');

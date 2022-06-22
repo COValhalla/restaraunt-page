@@ -8,11 +8,12 @@ module.exports = {
   plugins: [
     new HtmlWebpackPlugin({
       title: 'Restaurant Page',
-      template: 'index.html',
+      template: './src/template.html',
     }),
   ],
   output: {
     filename: 'main.js',
     path: path.resolve(__dirname, 'dist'),
+    clean: true,
   },
 };
