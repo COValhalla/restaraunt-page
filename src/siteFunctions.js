@@ -2,9 +2,16 @@ import loadHome from './loadHome';
 import loadMenu from './loadMenu';
 // Need to create loadContact
 
+// Creates standard DOM elements header, main, footer and adds listeners to buttons
 export function init() {
+  createHeader();
+  createMain();
+  createFooter();
+  btnListeners();
+}
+
+function createHeader() {
   const content = document.querySelector('.content');
-  // Generate header and buttons
   const header = document.createElement('div');
   header.classList.add('header');
 
@@ -21,21 +28,24 @@ export function init() {
   contactBtn.textContent = 'Contact';
 
   header.append(homeBtn, menuBtn, contactBtn);
+  content.append(header);
+}
 
-  // Generate main block
+function createMain() {
+  const content = document.querySelector('.content');
   const main = document.createElement('div');
   main.classList.add('main');
+  content.append(main);
+}
 
-  // Generate footer block
+function createFooter() {
+  const content = document.querySelector('.content');
   const footer = document.createElement('div');
   footer.classList.add('footer');
-
-  content.append(header, main, footer);
-  btnListeners();
+  content.append(footer);
 }
 
 function btnListeners() {
-  // Add event listner for each button
   const homeBtn = document.querySelector('.homeBtn');
   homeBtn.addEventListener('click', function () {
     removeMain();
